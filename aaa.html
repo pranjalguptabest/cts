@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+
+  input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=button] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Pranjal Page</h1>
+  <p></p>
+  <div class="row row-no-gutters">
+    <div class="col-sm-4" style="background-color:lavender;">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+            
+            <label for="lname">Emali-ID</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your Emali-ID.."><br>
+            
+            <label for="lname">Phone No.</label>
+            <input type="text" id="lname" name="lastname" placeholder="your Phone Number.."><br>
+        
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select><br><br>
+          
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+
+
+
+
+
+    <div class="col-sm-8" style="background-color:rgb(148, 223, 154);">
+
+        <h1>JS Implementation</h1><br><br>
+        <p>Please input a number between 1 and 10:</p>
+
+        <input id="numb">
+
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+              var x, text;
+            
+              x = document.getElementById("numb").value;
+            
+              if (isNaN(x) || x < 1 || x > 10) {
+                text = "Input not valid";
+              } else {
+                text = "Input OK";
+              }
+              document.getElementById("demo").innerHTML = text;
+            }
+            </script>
+    
+    
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">
+    
+    
+        <script>
+
+            function myfunct2()
+            {
+            var a= document.form1.uname.value;
+            var b= document.form1.pname.value;
+            console.log(a);
+            console.log(b);
+            
+            //event.preventDefault();
+            
+            
+            }
+                </script>
+                
+            
+            
+            
+            
+            </head>
+            
+            
+            <body>
+            
+            <form name ="form1">
+            
+            FIRSTNAME : <input type="text" name= "uname";>
+            <br>
+            <br>
+            SIRNAME: <input type="text" name="pname";>
+            <br>
+            <br>
+            
+            SUBMIT : <input type ="button" value="submit" onclick ="myfunct2()";>
+            </form>
+    
+    
+    
+    
+    
+    </div>
+    <div class="col-sm-8" style="background-color:lavenderblush;">.222</div>
+  </div>
+</div>
+    
+</body>
+</html>
